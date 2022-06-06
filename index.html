@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Tu nombre">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="The Rock">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <!--JavaScript-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+</head>
+<body>
+    <header class="header" x-data="{ open: false }">
+        <div class="container">
+            <div class="header__logo">Logo</div>
+            <nav class="nav " :class="open ? 'nav__show' : ''">
+                <button class="button header__button-close" @click="open = false">
+                    <img class="header__button-close-img" src="img/close.svg" alt="Cerrar menu" >
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Portafolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Sobre mi</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Fracasos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="button header__button-open" @click="open = true">
+                <img src="img/menu.svg" alt="Abrir menu">
+            </button>
+        </div>
+    </header>
+<main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores corporis dignissimos et expedita facilis
+        harum quidem ullam. Ad eaque facilis harum iste nemo officia. Alias amet architecto asperiores eaque eveniet
+        illum iste, optio quaerat quisquam repellendus sapiente tempora voluptas.</p>
+    <p>Aperiam aspernatur aut consequuntur culpa cupiditate deleniti deserunt enim eos eveniet excepturi exercitationem
+        fugiat id illum inventore iure laboriosam laudantium magni minus nisi odio placeat possimus quas quia quibusdam
+        quisquam, repudiandae, saepe sapiente sequi soluta totam ullam veniam veritatis voluptas?</p>
+    <p>Accusamus adipisci assumenda at consectetur corporis, culpa cumque debitis dolor eos id in itaque iusto, nesciunt
+        nihil nisi perferendis porro provident ratione sit tenetur. Beatae, dicta eum magni natus nihil porro possimus
+        quaerat quo repellat similique totam, vel voluptatem! Recusandae!</p>
+    <p>Aliquid cupiditate dolor doloribus hic ipsa, laudantium magnam minus quae quia quisquam repellendus saepe
+        veritatis vitae. Error esse numquam quos sit voluptate! Aliquid facere harum minima quisquam voluptate?
+        Accusantium beatae dolore facilis ipsa molestiae neque nihil quae sed vero voluptatum?</p>
+    <p>Architecto assumenda consectetur cupiditate debitis doloremque hic illum iure labore maxime necessitatibus qui,
+        similique tempore. Blanditiis ea eveniet explicabo hic maxime nam nisi totam voluptas. Ab corporis ipsum iure
+        quos. Accusantium amet eveniet exercitationem expedita laborum molestias perspiciatis, quidem voluptate.</p>
+</main>
+</body>
+</html>

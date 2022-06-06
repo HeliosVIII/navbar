@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: initial;
+  border: 0;
+}
+/*# sourceMappingURL=main.css.map */
